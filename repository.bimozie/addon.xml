@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.bimozie" version="1.0" name="Bimozie repository" provider-name="billy.nguyen">
+    <requires>
+        <import addon="xbmc.addon" version="12.0.0"/>
+    </requires>
+    <extension point="xbmc.addon.repository" name="Bimozie repository">
+        <dir>
+            <info compressed="true">https://raw.github.com/billythekids/kodi.repository/master/addons.xml</info>
+            <checksum>https://raw.github.com/billythekids/kodi.repository/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://github.com/billythekids/kodi.repository/raw/master/zips/</datadir>
+        </dir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Bimozie repository</summary>
+        <description lang="en">This plugin allows you to watch movies from several vietnamese websites likes bilutv
+            phimmedia...
+        </description>
+        <disclaimer lang="en">The provider is not responsible for any issues caused by using this addon.
+        </disclaimer>
+        <email>billythekidsde@gmail.com</email>
+        <platform>all</platform>
+    </extension>
+</addon>
