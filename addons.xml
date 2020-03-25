@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-    <addon id="repository.bimozie" version="1.0" name="Bimozie repository" provider-name="billy.nguyen">
+    <addon id="repository.bimozie" version="1.1" name="Bimozie repository" provider-name="billy.nguyen">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
@@ -19,6 +19,11 @@
                 <info compressed="true">https://raw.githubusercontent.com/back-to/repo/master/addons.xml</info>
                 <checksum>https://raw.githubusercontent.com/back-to/repo/master/addons.xml.md5</checksum>
                 <datadir zip="true">https://raw.githubusercontent.com/back-to/repo/master/</datadir>
+            </dir>
+            <dir>
+                <info compressed="true">https://raw.githubusercontent.com/jdollarKodi/repository.jdollar/master/addons.xml</info>
+                <checksum>https://raw.githubusercontent.com/jdollarKodi/repository.jdollar/master/addons.xml.md5</checksum>
+                <datadir zip="true">https://raw.githubusercontent.com/back-to/repository.jdollar/master/</datadir>
             </dir>
         </extension>
         <extension point="xbmc.addon.metadata">
@@ -145,6 +150,24 @@
             <assets>
                 <icon>icon.png</icon>
             </assets>
+        </extension>
+    </addon>
+
+    <addon id="repository.jdollar" name="jdollarKodi repository" version="1.0.0" provider-name="jdollarKodi">
+        <extension point="xbmc.addon.repository" name="jdollarKodi">
+            <info compressed="true">https://raw.githubusercontent.com/jdollarKodi/repository.jdollar/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/jdollarKodi/repository.jdollar/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/jdollarKodi/repo/master/</datadir>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>jdollarKodi repository</summary>
+            <description>jdollarKodi repository</description>
+            <platform>all</platform>
+            <source>https://github.com/jdollarKodi/repository.jdollar</source>
+            <news>
+                1.0.0
+                - First iteration of the repository
+            </news>
         </extension>
     </addon>
 </addons>
