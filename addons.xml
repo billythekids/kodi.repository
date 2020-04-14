@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-    <addon id="repository.bimozie" version="1.0" name="Bimozie repository" provider-name="billy.nguyen">
+    <addon id="repository.bimozie" version="1.1" name="Bimozie repository" provider-name="billy.nguyen">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
@@ -33,13 +33,14 @@
         </extension>
     </addon>
 
-    <addon id="plugin.video.bimozie" name="BimoZie" version="0.3.25" provider-name="billy.nguyen">
+    <addon id="plugin.video.bimozie" name="BimoZie" version="0.3.26" provider-name="billy.nguyen">
         <requires>
             <import addon="xbmc.python" version="2.25.0"/>
             <import addon="script.module.beautifulsoup4" version="4.3.1"/>
             <import addon="script.module.urlresolver" version="5.0.40"/>
             <import addon="script.module.requests" version="2.7.0"/>
             <import addon="script.module.youtube.dl" version="18.1107.0"/>
+            <import addon="script.module.cloudscraper" version="1.2.24"/>
         </requires>
         <extension point="xbmc.python.pluginsource" library="default.py">
             <provides>video</provides>
@@ -50,15 +51,12 @@
                 hdvietnam...
             </description>
             <disclaimer>The provider is not responsible for any issues caused by using this addon.
-                Due to the nature of our content, we are not responsible for the content streamed to your device and
-                neither
-                do we condone piracy so you must satisfy yourself that either you or the sites accessed for streaming
-                have
+                Due to the nature of our content, we are not responsible for the content streamed to your device and neither
+                do we condone piracy so you must satisfy yourself that either you or the sites accessed for streaming have
                 the copyright agreements in place and are entitled to access this content.
                 We do not host or upload any video, films, media file, live streams (avi, mov, flv, mpg, mpeg, divx, dvd
                 rip, mp3, mp4, torrent, ipod, psp). KodiTips is not responsible for the accuracy, compliance, copyright,
-                legality, decency, or any other aspect of the content of streamed from your device. If you have any
-                legal
+                legality, decency, or any other aspect of the content of streamed from your device. If you have any legal
                 issues please contact the appropriate media file owners or host sites.
                 We have no control over the links on any site that we provide a link to. If you see any form of
                 infringements, please contact appropriate media file owners or host sites immediately.
@@ -147,4 +145,26 @@
             </assets>
         </extension>
     </addon>
+
+    <addon id="script.module.cloudscraper" name="CloudScraper2" version="1.2.24" provider-name="venomous">
+      <requires>
+        <import addon="xbmc.python" version="2.26.0"/>
+        <import addon="script.module.requests" />
+      </requires>
+      <extension point="xbmc.python.module" library="lib" />
+      <extension point="xbmc.python.pluginsource" library="lib" />
+      <extension point="xbmc.addon.metadata">
+        <summary lang="en_gb">cloudscraper</summary>
+        <description lang="en_gb">cloudscraper</description>
+        <disclaimer lang="en_gb"></disclaimer>
+        <language></language>
+        <platform>all</platform>
+        <license></license>
+        <forum></forum>
+        <website></website>
+        <email></email>
+        <source></source>
+      </extension>
+    </addon>
+
 </addons>
