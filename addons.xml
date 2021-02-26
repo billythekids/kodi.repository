@@ -72,7 +72,7 @@
         </extension>
     </addon>
 
-    <addon id="plugin.video.bimozie.next" name="BimoZie Next" version="1.0.1" provider-name="billy.nguyen">
+    <addon id="plugin.video.bimozie.next" name="BimoZie Next" version="1.0.2" provider-name="billy.nguyen">
         <requires>
             <import addon="xbmc.python" version="3.0.0"/>
             <import addon="script.module.six" version="1.14.0"/>
@@ -88,7 +88,7 @@
         <extension point="xbmc.addon.metadata">
             <summary lang="en">Bimozie addon for Kodi 19</summary>
             <description lang="en">
-                This plugin allows you to watch movies from several vietnamese websites
+                For Kodi 19. This plugin allows you to watch movies from several vietnamese websites
             </description>
             <disclaimer lang="en">The provider is not responsible for any issues caused by using this addon.
                 Due to the nature of our content, we are not responsible for the content streamed to your device and
