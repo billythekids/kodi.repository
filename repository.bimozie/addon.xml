@@ -14,11 +14,6 @@
             <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/zips/</datadir>
         </dir>
-        <dir>
-            <info compressed="true">https://raw.githubusercontent.com/back-to/repo/master/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/back-to/repo/master/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/back-to/repo/master/zips/</datadir>
-        </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary lang="en">Bimozie repository</summary>
