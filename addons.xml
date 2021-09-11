@@ -66,7 +66,7 @@
         </extension>
     </addon>
 
-    <addon id="plugin.video.bimozie-next" name="BimoZie Next" version="1.0.12" provider-name="billy.nguyen">
+    <addon id="plugin.video.bimozie-next" name="BimoZie Next" version="1.0.13" provider-name="billy.nguyen">
         <requires>
             <import addon="xbmc.python" version="3.0.0"/>
             <import addon="script.module.six" version="1.14.0"/>
@@ -76,6 +76,7 @@
             <import addon="script.module.requests-cache" version="0.5.2"/>
             <import addon="script.module.pycryptodome" version="3.4.3"/>
             <import addon="script.module.routing" version="0.2.3"/>
+            <import addon="script.module.cloudscraper" version="1.2.52"/>
         </requires>
         <extension point="xbmc.python.pluginsource" library="default.py">
             <provides>video</provides>
@@ -167,25 +168,25 @@
         </extension>
     </addon>
 
-    <addon id="script.module.cloudscraper" name="CloudScraper2" version="1.2.24" provider-name="venomous">
-        <requires>
-            <import addon="xbmc.python" version="2.26.0"/>
-            <import addon="script.module.requests"/>
-        </requires>
-        <extension point="xbmc.python.module" library="lib"/>
-        <extension point="xbmc.python.pluginsource" library="lib"/>
-        <extension point="xbmc.addon.metadata">
-            <summary lang="en_gb">cloudscraper</summary>
-            <description lang="en_gb">cloudscraper</description>
-            <disclaimer lang="en_gb"></disclaimer>
-            <language></language>
-            <platform>all</platform>
-            <license></license>
-            <forum></forum>
-            <website></website>
-            <email></email>
-            <source></source>
-        </extension>
+    <addon id="script.module.cloudscraper" name="CloudScraper2" version="1.2.52" provider-name="venomous">
+      <requires>
+        <!-- <import addon="xbmc.python" version="3.0.0"/> -->
+        <import addon="script.module.requests" />
+      </requires>
+      <extension point="xbmc.python.module" library="lib" />
+      <extension point="xbmc.python.pluginsource" library="lib" />
+      <extension point="xbmc.addon.metadata">
+        <summary lang="en_gb">cloudscraper</summary>
+        <description lang="en_gb">cloudscraper</description>
+        <disclaimer lang="en_gb"></disclaimer>
+        <language></language>
+        <platform>all</platform>
+        <license></license>
+        <forum></forum>
+        <website></website>
+        <email></email>
+        <source></source>
+      </extension>
     </addon>
 
 </addons>
